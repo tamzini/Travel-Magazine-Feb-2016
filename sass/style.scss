@@ -1,0 +1,373 @@
+
+
+
+$primaryColor:red ;
+$secondryColor:#91022E;
+$margin: 0px auto;
+$border:1px solid black;
+$fontSize1:15px;
+$fontSize2:20px;
+$headerFontSize:25px;
+$height:50px;
+$width:100%;
+$padding:10px;
+$backGroundcolor:#333333;
+$height2:90%;
+
+
+@mixin lists {
+	list-style:none;
+	font-size: $fontSize1;
+	height:50px;
+	float:left;
+	font-weight:bold ;
+	line-height:45px;
+	border-right:$border ;
+}
+
+@mixin links {
+	text-decoration:none ;
+	color:white;
+}
+ @mixin clear-fix {
+ clear:both;
+ }
+
+ @mixin float-lft {
+   float: left ;
+ }
+
+ @mixin float-rt {
+   float: right ;
+ }
+
+/* mobile first responsive */
+
+* {
+	margin:0px ;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+  body {
+      background-color:$backGroundcolor ;
+      padding-top: 265px;
+      
+      }
+
+       header {
+    	position: relative;
+    	z-index:500;
+    	color:white;
+    }
+
+
+    .evanescent-container {
+    	position: fixed ;
+    	top: 0px ;
+    	left: 0px ;
+    	z-index: 2 ;
+        height: 50%;
+    	
+    }
+
+    nav {
+	font-weight:normal ;
+    opacity: 0.7;
+    background-color: #2F3238;
+    width: $width;
+    height:$height;
+    margin: $margin ;
+             }
+
+   .nav-scrolled {
+	background-color: black;
+	opacity: 1.0 ;
+	position: fixed;
+	top: 0px;
+	z-index: 500;
+}
+
+
+          
+.logo {
+	height: $height;
+	@include float-lft;
+
+ h4{
+	border-right:$border;
+	padding:5px 20px;
+	font-size:16px;
+ }
+ h4:hover { 
+     color:$primaryColor;
+     }    
+}
+
+    .menu {
+    display:block ;
+   @include float-rt;
+	margin-top:10px;
+	margin-right:20px;
+    }
+
+    .nav-bar {
+	width:$width;
+	height:$height;
+	
+    li {
+    @include lists;
+    display:none;
+    width:$width;
+    text-align:center ;
+    border-bottom: 1px solid black;
+    
+    }
+
+   
+   a {
+	@include links ;
+	display:block;
+     }
+   a:hover {
+   color:$primaryColor;
+   }  
+}
+   
+    main {
+        clear:both ;
+    	width: $width;
+    	background-color:$backGroundcolor ;
+    	position: relative;
+    	z-index: 200;
+    	
+    }
+
+   .pics {
+   width:90%;
+   margin:20px auto;
+   
+   li {
+   list-style:none;
+   width: $width;
+   margin:20px 20px 20px 0px;
+   }
+
+   img {
+   width: $width;
+   }
+  }
+  main img:hover {
+  box-sizing: border-box;
+  opacity: 0.5 ;
+  border: 3px solid black;
+  }
+
+  .aside {
+        padding-top:50px;
+        width: $width;
+    	background-color:$backGroundcolor ;
+    	position: relative;
+    	z-index: 200;
+    	overflow: hidden ;
+    }
+    .tweets {
+    width: 100%;
+    background-color:$backGroundcolor ;
+    
+    
+
+    }
+   
+
+    .contacts {
+        clear:both;
+        width: $width;
+    	background-color:#2F3238 ;
+    	position: relative;
+    	z-index: 200;
+    	padding-top:50px;
+    	font-family: 'Titillium Web', sans-serif;
+    	
+    }
+
+    .contactForm {
+     width: 90%;
+     margin: $margin;
+     padding-bottom: 80px;
+    }
+    
+
+    input.details,input.button,textarea {
+    border-color:black;
+    font-size:$fontSize1;
+    background-color:#26292E;
+    padding:20px;
+    width: $width ;
+    color:white;
+    }
+
+    input.button {
+    height: $height;
+    margin:20px 0px;
+    }
+    textarea {
+    height:300px;
+    }
+
+    #myMap {
+    width: $width;
+    height:480px;
+    background-color:orange;
+    }
+
+     .myAddress {
+    width: $width;
+    height:480px;
+    background-color:#26292E;
+    text-align: center;
+    color:white;
+    
+     a {
+    @include links;
+   color:$primaryColor;
+    }
+     a:hover {
+     color:white;
+     }
+     }
+     
+
+    .socialMedia 
+    {
+    @include clear-fix ;
+    width: $width;
+    height:100px ;
+    background-color:black ;
+    position: relative;
+    z-index: 200;
+    ul {
+    width:250px;
+    height:60px;
+    margin: 0px auto;
+    background-color:black;
+    }
+    li {
+     list-style:none ;
+     @include float-lft;
+     margin-right:10px;
+     margin-top:50px;
+    }
+    img {
+     width:50px;
+     height:50px;
+     opacity: 0.5;
+     
+    } 
+    }
+    .socialMedia img:hover {
+    opacity: 1.0 ;
+    }
+
+    footer {
+    @include clear-fix ;
+    width: $width;
+    height: 80px;
+    background-color:black;
+    position: relative;
+    z-index: 200;
+  
+    }
+     h1,h3 ,h4{
+     font-family: 'Titillium Web', sans-serif;
+     font-weight: normal;
+     color:white;
+     text-align:center;
+     }
+     h1 {
+    padding-top: 50px;
+    font-size:30px;
+    }
+
+    h3{
+    padding-top: 30px;
+    padding-bottom:20px;
+    font-size:17px;
+    }
+    h4 {
+    padding-top: 20px;
+    padding-bottom:10px;
+    font-size:16px;
+    }
+
+/* styling for laptop */
+
+
+@media only screen and (min-width: 800px) {
+
+  body {
+    padding-top:580px;
+	
+  }
+.evanescent-container {
+    	
+        height: 100%;
+    	
+    }
+
+.menu {
+	
+	display:none;
+	
+}
+
+ .nav-bar {
+	width:60%;
+	@include float-lft;
+	
+
+
+ li {
+   width: 15%;
+   @include float-lft;
+    border-bottom: 0px solid black;
+   display:block;
+    }
+}
+main {
+	width:75% ;
+	@include float-lft ;
+}
+
+  .pics li {
+   @include float-lft ;
+   width: 47%;
+   margin:20px 3% 20px 0px;
+   }
+
+  
+.aside {
+	width: 25% ;
+    border-left: 1px solid white;
+}
+
+.contactForm {
+     width: 60%;
+     
+    }
+
+     #myMap {
+    width: 60%;
+    @include float-lft ;
+    }
+
+     .myAddress {
+     @include float-lft ;
+     width:40%;
+   
+    }
+  
+ 
+    }
+
+

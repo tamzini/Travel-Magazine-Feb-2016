@@ -1,0 +1,254 @@
+/* mobile first responsive */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  background-color: #333333;
+  padding-top: 265px; }
+
+header {
+  position: relative;
+  z-index: 500;
+  color: white; }
+
+.evanescent-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  height: 50%; }
+
+nav {
+  font-weight: normal;
+  opacity: 0.7;
+  background-color: #2F3238;
+  width: 100%;
+  height: 50px;
+  margin: 0px auto; }
+
+.nav-scrolled {
+  background-color: black;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  z-index: 500; }
+
+.logo {
+  height: 50px;
+  float: left; }
+  .logo h4 {
+    border-right: 1px solid black;
+    padding: 5px 20px;
+    font-size: 16px; }
+  .logo h4:hover {
+    color: red; }
+
+.menu {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px; }
+
+.nav-bar {
+  width: 100%;
+  height: 50px; }
+  .nav-bar li {
+    list-style: none;
+    font-size: 15px;
+    height: 50px;
+    float: left;
+    font-weight: bold;
+    line-height: 45px;
+    border-right: 1px solid black;
+    display: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black; }
+  .nav-bar a {
+    text-decoration: none;
+    color: white;
+    display: block; }
+  .nav-bar a:hover {
+    color: red; }
+
+main {
+  clear: both;
+  width: 100%;
+  background-color: #333333;
+  position: relative;
+  z-index: 200; }
+
+.pics {
+  width: 90%;
+  margin: 20px auto; }
+  .pics li {
+    list-style: none;
+    width: 100%;
+    margin: 20px 20px 20px 0px; }
+  .pics img {
+    width: 100%; }
+
+main img:hover {
+  box-sizing: border-box;
+  opacity: 0.5;
+  border: 3px solid black; }
+
+.aside {
+  padding-top: 50px;
+  width: 100%;
+  background-color: #333333;
+  position: relative;
+  z-index: 200;
+  overflow: hidden; }
+
+.tweets {
+  width: 100%;
+  background-color: #333333; }
+
+.contacts {
+  clear: both;
+  width: 100%;
+  background-color: #2F3238;
+  position: relative;
+  z-index: 200;
+  padding-top: 50px;
+  font-family: 'Titillium Web', sans-serif; }
+
+.contactForm {
+  width: 90%;
+  margin: 0px auto;
+  padding-bottom: 80px; }
+
+input.details, input.button, textarea {
+  border-color: black;
+  font-size: 15px;
+  background-color: #26292E;
+  padding: 20px;
+  width: 100%;
+  color: white; }
+
+input.button {
+  height: 50px;
+  margin: 20px 0px; }
+
+textarea {
+  height: 300px; }
+
+#myMap {
+  width: 100%;
+  height: 480px;
+  background-color: orange; }
+
+.myAddress {
+  width: 100%;
+  height: 480px;
+  background-color: #26292E;
+  text-align: center;
+  color: white; }
+  .myAddress a {
+    text-decoration: none;
+    color: white;
+    color: red; }
+  .myAddress a:hover {
+    color: white; }
+
+.socialMedia {
+  clear: both;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  z-index: 200; }
+  .socialMedia ul {
+    width: 250px;
+    height: 60px;
+    margin: 0px auto;
+    background-color: black; }
+  .socialMedia li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    margin-top: 50px; }
+  .socialMedia img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5; }
+
+.socialMedia img:hover {
+  opacity: 1; }
+
+footer {
+  clear: both;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  position: relative;
+  z-index: 200; }
+
+h1, h3, h4 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  color: white;
+  text-align: center; }
+
+h1 {
+  padding-top: 50px;
+  font-size: 30px; }
+
+h3 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 17px; }
+
+h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 16px; }
+
+/* styling for laptop */
+@media only screen and (min-width: 800px) {
+  body {
+    padding-top: 580px; }
+
+  .evanescent-container {
+    height: 100%; }
+
+  .menu {
+    display: none; }
+
+  .nav-bar {
+    width: 60%;
+    float: left; }
+    .nav-bar li {
+      width: 15%;
+      float: left;
+      border-bottom: 0px solid black;
+      display: block; }
+
+  main {
+    width: 75%;
+    float: left; }
+
+  .pics li {
+    float: left;
+    width: 47%;
+    margin: 20px 3% 20px 0px; }
+
+  .aside {
+    width: 25%;
+    border-left: 1px solid white; }
+
+  .contactForm {
+    width: 60%; }
+
+  #myMap {
+    width: 60%;
+    float: left; }
+
+  .myAddress {
+    float: left;
+    width: 40%; } }
+
+/*# sourceMappingURL=style.css.map */
