@@ -1,4 +1,4 @@
-# Travel-Magazine-Feb-2016
+<h1 style = "color:red;"> Travel-Magazine</h1>
 Travel Magazine
 
-<h1> hello </h1>
+
