@@ -5,6 +5,6 @@ Travel Magazine
 <li> one </li>
 </ul>
 
-<img src = "images/facebook.PNG">
+<a href = "http://217.199.187.67/travelmagazine.com/"  target = "_blank"><img src = "images/facebook.PNG"> </a>
 
 
