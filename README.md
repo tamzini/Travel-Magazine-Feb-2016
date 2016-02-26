@@ -22,6 +22,9 @@ Instead of changing styles when the width gets smaller than 800px, we should cha
 <h6>SASS </h6>
 
 <p> To keep my styling sheets under control it has be done the SASS way  to benefit from variables, nesting and mixins and to keep my style sheets tidy and reusable</p>
+<h6>Google Map API And Twitter Wedgets</h6>
+<p>Twitter wedgets are straight forward way to connect your website with your twitter account to keep your website visitor up to date with your last tweets and announcements ...It's easy to use and can be customised to match your website's styling and color scheme.</p>
+<p> Google Map API gives you the power to customise google maps by usig your own Marker icons and add info windows to them to give more info than just a location. and they are very handy when your bussiness has  more than one location and want to view them in one map.  </p>
 
 <h6>UX And Accessibility </h6>
 The sticky menu feature added using Jquery to keep the nav menu visible and accessable while visitors browes through the website and all colors, background colors, font types and sizes choosen carefully to allow users to have the best experience UX.
