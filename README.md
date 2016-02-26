@@ -5,6 +5,6 @@ Travel Magazine
 <li> one </li>
 </ul>
 
-<img src = "images/facebook.png">
+<img src = "images/facebook.PNG">
 
 
