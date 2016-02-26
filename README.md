@@ -19,11 +19,11 @@
 
 Instead of changing styles when the width gets smaller than 800px, we should change the design when the width gets larger than 800px. This will make our design Mobile First.
 
-<h6>SASS <h6/>
+<h6>SASS </h6>
 
 <p> To keep my styling sheets under control it has be done the SASS way  to benefit from variables, nesting and mixins and to keep my style sheets tidy and reusable</p>
 
-<h6>Accessibility </h6>
+<h6>UX And Accessibility </h6>
 The sticky menu feature added using Jquery to keep the nav menu visible and accessable while visitors browes through the website and all colors, background colors, font types and sizes choosen carefully to allow users to have the best experience UX.
 <h6>plugin </h6>
 <p>The photo slide made using Supersized plugin Build by Sam Dunn of One Mighty Roar.</p>
